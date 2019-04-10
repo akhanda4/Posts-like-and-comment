@@ -1,0 +1,115 @@
+body{
+   background: url('background.jpg');
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-position: center center;
+   background-size: cover;
+   margin: 0 !important;
+   background-size: 100%!important;
+   overflow:hidden;
+   display: block;
+}
+.header{
+	display: inline ;
+}
+span{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+                                
+.modal{           /*base structure of moda;*/
+  display: none; 
+  position: fixed; 
+  z-index: 1; /* Sit on top */
+  padding-top: 20px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content_1,.modal-content_2,.modal-content_3 {   /*basic structure of modal content*/
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 25%;
+}
+.modal-content_3{
+    padding: 20px 25px 50px 20px;
+}
+#myModal_2{
+    padding-top: 110px;
+}
+#myModal_3{
+    padding-top: 150px;
+}
+.close {               /*close button on modals*/
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover, .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h2{								/*headings of modal*/
+	text-align: center;
+	margin-left: 25px;
+}
+hr{
+	border:solid 1px #9a9a9a;
+	background: gray;
+}
+input{
+	margin-bottom: 20px;
+	margin-top: 5px;
+	padding: 15px 15px 15px 15px;
+	width: 90%;
+	background: #f5f5f5;
+	border:1px;
+}
+textarea{								/*text area in create post modal*/
+    margin-bottom: 20px;
+    margin-top: 5px;
+    padding: 15px 15px 15px 15px;
+    width: 90%;
+    background: #f5f5f5;
+
+    border: 1px solid gray;
+}
+.success{
+	margin-top: 20px;
+    margin-bottom: 15px;
+	color: white;
+	width: 100%;
+	padding: 12px 12px 12px 12px;
+	background: #5eb762;
+	border:none;
+}
+.two_btns{
+    width:90px!important;
+    display: inline!important;
+   padding: 7px 12px 7px 12px !important;
+    float: right !important;
+    font-size: 13px;
+    font-weight: bolder;
+    background:#5eb762;
+    border:1px solid lightgray !important;
+    margin-right: 6px !important;
+    margin-left: 5px !important;
+    color: white;
+    cursor: pointer;
+}
+.two_btns:hover{
+    color:white;
+}
+/* Set a style for the rest of the elements besides the header elements on the index.html page */
+                                 

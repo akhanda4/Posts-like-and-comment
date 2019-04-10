@@ -1,0 +1,122 @@
+.blogTite {
+    font-size: 150%;
+    font-family: 'Abel', sans-serif;
+    font-weight: bold;
+}
+.blogText {
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.blogAuthor {
+    padding: 0px 0px 0px 10px;
+    font-family: 'Niconne', cursive;
+    font-size: 30px;
+}
+.fa-pencil-square-o{
+  margin-left: 5px;
+}
+.blogContent{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+#blogTitle{
+    text-align: center !important;
+}
+
+#editBtn{   /*Edit post button*/
+	color: white;
+	float: right;
+	background: #ef3b65;
+	border:none;
+	width: 80px;
+	height: 30px; 
+}
+#likeBtn{  /*Like buttons properties*/
+    color: white;
+    background: #ef3b65;
+    border:none;
+    width: 80px;
+    height: 30px;
+}
+#commentBtn{    /*comments post buttons*/
+    color: white;
+    background: #ef3b65;
+    border:none;
+    width: 80px;
+    height: 30px;
+}
+#comments{    /*comments area or comments section*/
+    background: #e2e4e6;
+    border: 10px solid #e2e4e6;
+    padding-right: 10px;
+    padding-left: 10px;
+
+}
+#paragraph{   /*new added comment properties*/
+    background: white;
+    padding: 15px;
+}
+                                 
+.modal{
+  display: none; 
+  position: fixed; 
+  z-index: 1; /* Sit on top */
+  padding-top: 20px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+#myModal_2{
+    padding-top: 110px;
+}
+.modal-content_1,.modal-content_2 {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 25%;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h2{
+    text-align: center;
+    margin-left: 25px;
+}
+hr{
+    border:solid 1px #9a9a9a;
+    background: gray;
+}
+input{
+    margin-bottom: 20px;
+    margin-top: 5px;
+    padding: 15px 15px 15px 15px;
+    width: 90%;
+    background: #f5f5f5;
+    border:1px;
+}
+.success{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    color: white;
+    width: 100%;
+    padding: 12px 12px 12px 12px;
+    background: #5eb762;
+    border:none;
+}
+/* Set a style for all the remaining elements like Like button, Edit button, Comment button and so on. */

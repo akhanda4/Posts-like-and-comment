@@ -1,0 +1,47 @@
+/* Set a style for all elements inside the header i.e. Sign Up button, Sign In button, 
+the title "ScriBBler" & the sub-heading below "ScriBBLer" */
+
+
+.header{
+    display: inline ;
+}
+span{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#main_heading{
+    color: blue;
+    font-family: 'Satisfy', cursive;
+    font-size: 45px;
+}
+#base_heading{
+    font-family: 'Marck Script', cursive;
+}
+
+.btns{        /*signin and signup buttons*/
+    float: right;
+    background: blue;
+    margin-right: 10px;
+    margin-top: 5px;
+    height: 35px;
+    padding: 10px 15px 10px 15px;
+    color: white;
+}
+.blue{
+    background: blue;
+}
+.container{                       /* All posts and createpost buttons*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+}
+ 
+.orange{
+    background: #cfb53b; 
+    color: black;
+    font-weight: bolder;
+    padding: 10px 15px 10px 15px;
+}

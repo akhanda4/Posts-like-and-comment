@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Place all CSS for header in this file -->
+    <link href='css\header.css' rel='stylesheet' type='text/css'>
+
+    <!-- Place all CSS for the rest of the elements in this file -->
+    <link href='css\index.css' rel='stylesheet' type='text/css'>
+
+	<!-- Place all CSS for fonts in this file -->
+    <link href='css\font.css' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+    <div id="main-container-div">
+
+        <div class="header">
+            <button class="btns blue" id="myBtn2" onclick="signup()">Sign up</button>
+            <button class="btns blue" id="myBtn1" onclick="signin()">Sign in</button>
+            <span id="main_heading">ScriBBler</span><br />
+            <span id="base_heading">Explore, Imagine, Create</span>
+        </div>
+           
+        <div class="postButtons container">
+            <a href="html/bloglist.html"><button class="btns orange">All Posts</button></a>
+            <button class="btns orange" id="myBtn3" onclick="createPost()">Create Post</button>
+        	<!-- Insert code for All Posts & Create Post button here -->
+
+        </div>
+    </div>
+
+    <div class="modal" id="myModal_1">
+        <div class="modal-content_1">
+            <form>
+                <span class="close">&times;</span>
+                <h2>Get Started</h2>
+                <hr>
+                <label>Full name</label><br />
+                <input type="text" placeholder="Enter full name" required><br />
+                <label>Username</label><br />
+                <input type="text" placeholder="Enter username" required><br />
+                <label>Password</label><br />
+                <input type="password" placeholder="Enter password" required><br />
+                 <label>Confirm Password</label><br />
+                <input type="password" placeholder="Confirm password" required><br />
+                <label style="display: none;">Button</label>
+                <button type="submit" class="success">Sign up</button>
+            </form>
+        </div>  
+
+    </div>
+
+    <div class="modal" id="myModal_2">
+        <div class="modal-content_2">
+            <form>
+                <span class="close">&times;</span>
+                <h2>Welcome Back!</h2>
+                <hr style="margin-bottom: 20px;">
+                <label>Username</label>
+                <input type="text" placeholder="Enter username" required><br />
+                <label>Password</label><br />
+                <input type="password" placeholder="Enter password" required><br />
+                <label style="display: none;">Button</label>
+                <button type="submit" class="success">Sign in</button>
+                <span>Not a member?</span> <a style="cursor: pointer;color: blue;font-weight: bolder;" onclick="signup()">Sign up</a>
+                </form>
+        </div>
+      </div>
+
+    <!--<div>-->
+
+        <div class="modal" id="myModal_3">
+            <div class="modal-content_3">
+                <form>
+                    <span class="close">&times;</span>
+                    <h2>Create Post</h2>
+                    <hr style="margin-bottom: 20px;">
+                    <label>Enter Title</label>
+                    <input type="text" placeholder="Enter title" required><br />
+                    <label>Description</label><br />
+                    <textarea cols="50" rows="3" placeholder="Description....."></textarea>
+                    <button type="reset" class="two_btns close" style="background:#f5564a;">Discard</button>
+                    <button type="submit" class="two_btns" >Create</button>
+
+                </form>
+            </div>
+        </div>
+
+   
+	<script src="js\header.js"></script>
+	 <script src="js\index.js"></script>
+
+</body>
+</html>

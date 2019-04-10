@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href='..\css\bloglist.css' rel='stylesheet' type='text/css'>    
+    <link href='..\css\header.css' rel='stylesheet' type='text/css'>
+    <link href='..\css\font.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="..\font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <style>
+    </style>
+</head>
+<body>
+    <div id="main-container-div">
+        <div class="header">
+            <button class="btns blue" id="myBtn2" onclick="signup()">Sign up</button>
+            <button class="btns blue" id="myBtn1" onclick="signin()">Sign in</button>
+            <span id="main_heading">ScriBBler</span><br />
+            <span id="base_heading">Explore, Imagine, Create</span>
+        </div>
+    </div>
+    <div class="modal" id="myModal_1">
+        <div class="modal-content_1">
+            <form>
+                <span class="close">&times;</span>
+                <h2>Get Started</h2>
+                <hr>
+                <label>Full name</label><br />
+                <input type="text" placeholder="Enter full name" required><br />
+                <label>Username</label><br />
+                <input type="text" placeholder="Enter username" required><br />
+                <label>Password</label><br />
+                <input type="password" placeholder="Enter password" required><br />
+                 <label>Confirm Password</label><br />
+                <input type="password" placeholder="Confirm password" required><br />
+                <label style="display: none;">Button</label>
+                <button type="submit" class="success">Sign up</button>
+            </form>
+        </div>  
+
+    </div>
+
+    <div class="modal" id="myModal_2">
+        <div class="modal-content_2">
+            <form>
+                <span class="close">&times;</span>
+                <h2>Welcome Back!</h2>
+                <hr style="margin-bottom: 20px;">
+                <label>Username</label>
+                <input type="text" placeholder="Enter username" required><br />
+                <label>Password</label><br />
+                <input type="password" placeholder="Enter password" required><br />
+                <label style="display: none;">Button</label>
+                <button type="submit" class="success">Sign in</button>
+                <span>Not a member?</span> <a style="cursor: pointer;color: blue;font-weight: bolder;" onclick="signup()">Sign up</a>
+                </form>
+        </div>
+      </div>
+
+    <div class="allPostsContainer">
+            <div class="post">
+                <div class="post-left">
+                    <p class="post-username">Jimi</p>
+                </div>
+                <div class="post-content">
+
+                    <i class="fas fa-trash-alt del" onclick="deletePost()"></i>
+
+                    <p class="post-title">Hello there ! This is Post 1. </p>
+                        <p class="post-desc">Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever ventured before.</p>
+
+                    <a href="post.html"> <a href="post.html"> <i class="fas fa-ellipsis-h dots"></i></a></a>
+
+                </div>
+            </div>
+            <div class="post">
+                <div class="post-left">
+                    <p class="post-username">Jimi</p>
+                </div>
+                <div class="post-content">
+
+                        <i class="fas fa-trash-alt del" onclick="deletePost()"></i>
+
+                        <p class="post-title">Hello there ! This is Post 2. </p>
+                        <p class="post-desc">Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever ventured before.</p>
+
+                    
+                    <a href="post.html"> <i class="fas fa-ellipsis-h dots"></i></a>
+                </div>
+            </div>
+            <div class="post">
+                <div class="post-left">
+                    <p class="post-username">Jimi</p>
+                </div>
+                <div class="post-content">
+
+                   <i class="fas fa-trash-alt del" onclick="deletePost()"></i>
+
+                        <p class="post-title">Hello there ! This is Post 3. </p>
+                        <p class="post-desc">Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever ventured before.</p>
+
+                    <a href="post.html"> <i class="fas fa-ellipsis-h dots"></i></a>
+
+                </div>
+            </div>
+            <div class="post">
+                <div class="post-left">
+                    <p class="post-username">Jimi</p>
+                </div>
+                <div class="post-content">
+
+                    <i class="fas fa-trash-alt del" onclick="deletePost()"></i>
+
+                        <p class="post-title">Hello there ! This is Post 4. </p>
+                        <p class="post-desc">Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever ventured before.</p>
+
+                    <a href="post.html"> <i class="fas fa-ellipsis-h dots"></i></a>
+
+                </div>
+            </div>
+            <div class="post">
+                    <div class="post-left">
+                        <p class="post-username">Jimi</p>
+                    </div>
+                    <div class="post-content">
+
+                       <i class="fas fa-trash-alt del" onclick="deletePost()"></i>
+
+                            <p class="post-title">Hello there ! This is Post 5. </p>
+                    
+                        <p class="post-desc">Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever ventured before.</p>
+                        
+                        <a href="post.html"> <i class="fas fa-ellipsis-h dots"></i></a>
+                    
+                    </div>
+            </div>
+
+            <div class="modal" id="myModal_3">
+            <div class="modal-content_3">
+                <form>
+                    <h3>Are you sure you want to deletePost this post?</h3>
+                    <button type="submit" class="btns Yes" id="yesBtn">Yes</button>
+                    <button type="submit" class="btns No" id="noBtn">No</button>
+                </form>
+            </div>
+      </div>
+
+
+</div>
+    <script src="..\js\bloglist.js">  </script>
+    <script src="..\js\header.js"> </script>
+</body>
+
+</html>
